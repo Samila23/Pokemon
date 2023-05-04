@@ -10,6 +10,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonIgnoreProperties
-public class Forms {
-	private Chain chain;
+public class Species1 {
+	  private String name;
 }

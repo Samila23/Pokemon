@@ -10,6 +10,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonIgnoreProperties
-public class Forms {
-	private Chain chain;
+public class UrlEvolution_chain {
+	  private String url;
 }

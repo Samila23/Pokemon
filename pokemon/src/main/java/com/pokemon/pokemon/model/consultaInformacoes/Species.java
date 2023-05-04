@@ -1,4 +1,4 @@
-package com.pokemon.pokemon.model.linhaEvolutiva;
+package com.pokemon.pokemon.model.consultaInformacoes;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonIgnoreProperties
-public class Forms {
-	private Chain chain;
+public class Species {
+	  private String name;
+	  private String url;
 }
