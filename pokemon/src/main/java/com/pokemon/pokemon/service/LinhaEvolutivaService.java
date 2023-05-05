@@ -4,17 +4,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
+import com.pokemon.pokemon.model.consultaInformacoes.ConsultaInformacoes;
 import com.pokemon.pokemon.model.linhaEvolutiva.Forms;
-import com.pokemon.pokemon.model.linhaEvolutiva.UrlEvolution_chain;
 import com.pokemon.pokemon.model.linhaEvolutiva.UrlLinhaEvolutiva;
 
 @Service
 public class LinhaEvolutivaService {
+	
 	@Autowired
 	ConsultaInformacoesService consultaInformacoesService;
+	
+	
 	private final String URL = "https://pokeapi.co";
 
-    public UrlLinhaEvolutiva retornaUrlEvolution_chain(String name) {
+    public UrlLinhaEvolutiva retornaUrlEvolution_chain(Integer name) {
         final String URI = "/api/v2/pokemon-species/";
     	
         UrlLinhaEvolutiva urlEvolution_chain = new UrlLinhaEvolutiva();
@@ -45,7 +48,8 @@ public class LinhaEvolutivaService {
     }
 	
 	public Forms getOneLinhaEvolutiva(String name) {
-		UrlLinhaEvolutiva urlEvolution_chain = retornaUrlEvolution_chain(name);
+		ConsultaInformacoes consultaInformacoes = consultaInformacoesService.getOneConsultaInformacoes(name);
+		UrlLinhaEvolutiva urlEvolution_chain = retornaUrlEvolution_chain(consultaInformacoes.getId());
 		String a = urlEvolution_chain.getEvolution_chain().getUrl();
 		String path = a.substring(42 , a.length() - 1);
 		Forms forms = retornaLinhaEvolutiva(Integer.parseInt(path));

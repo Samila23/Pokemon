@@ -3,6 +3,7 @@ package com.pokemon.pokemon.model.linhaEvolutiva;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.pokemon.pokemon.model.consultaInformacoes.Species;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,5 +15,5 @@ import lombok.NoArgsConstructor;
 public class Chain {
 
 	private List<Evolves_to> evolves_to;
-	private Species1 species;
+	private Species species;
 }

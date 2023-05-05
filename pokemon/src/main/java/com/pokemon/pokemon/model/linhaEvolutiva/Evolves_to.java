@@ -1,5 +1,7 @@
 package com.pokemon.pokemon.model.linhaEvolutiva;
 
+import java.util.List;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.pokemon.pokemon.model.consultaInformacoes.Species;
 
@@ -12,5 +14,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @JsonIgnoreProperties
 public class Evolves_to {
-	  private Species2 species;
+	private List<Evolves_to> evolves_to;
+	private Species species;
 }
