@@ -27,11 +27,6 @@ public class ConsultaInformacoesService {
     
 	public ConsultaInformacoes getOneConsultaInformacoes(String name) {
 		ConsultaInformacoes funcionalidades = retornaDadosFuncionalidades(name);
-		for (Stats emprestimo : funcionalidades.getStats()) {
-			int i = 0;
-			emprestimo.setBase_stat(funcionalidades.getStats().get(i).getBase_stat());
-			System.out.println(emprestimo.getBase_stat());
-		}
 		return funcionalidades;
 	}
 
