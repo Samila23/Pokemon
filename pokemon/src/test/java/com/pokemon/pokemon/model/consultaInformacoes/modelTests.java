@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -16,12 +17,18 @@ import org.springframework.test.web.servlet.MockMvc;
 @AutoConfigureMockMvc																						//Sempre que usar o MockMVC
 @SpringBootTest
 public class modelTests {
-	ConsultaInformacoes consultaInformacoes = new ConsultaInformacoes();
-	Species species = new Species();
-	Stats stats = new Stats();
-	Stat stat = new Stat();
-	Types types = new Types();
-	Type type = new Type();
+	@InjectMocks
+    private ConsultaInformacoes consultaInformacoes;
+	@InjectMocks
+	private Species species;
+	@InjectMocks
+	private Stats stats;
+	@InjectMocks
+	private Stat stat;
+	@InjectMocks
+	private Types types;
+	@InjectMocks
+	private Type type;
 
 	@Test
 	public void testConsultaInformacoes(){
@@ -46,12 +53,16 @@ public class modelTests {
 	@Test
 	public void testSpecies(){
 		species.setName("teste");
+		species.setUrl("teste");
+		species.getName();
 		species.getUrl();
 	}
 	
 	@Test
 	public void testStat(){
 		stat.setName("teste");
+		stat.setUrl("teste");
+		stat.getName();
 		stat.getUrl();
 	}
 	
@@ -70,6 +81,8 @@ public class modelTests {
 	@Test
 	public void testType(){
 		type.setName("teste");
+		type.setUrl("teste");
+		type.getName();
 		type.getUrl();
 	}
 	

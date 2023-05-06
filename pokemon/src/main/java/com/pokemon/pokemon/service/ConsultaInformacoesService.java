@@ -4,7 +4,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
 import com.pokemon.pokemon.model.consultaInformacoes.ConsultaInformacoes;
-import com.pokemon.pokemon.model.consultaInformacoes.Stats;
 @Service
 public class ConsultaInformacoesService {
     private final String URL = "https://pokeapi.co";
