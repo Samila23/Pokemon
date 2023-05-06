@@ -10,7 +10,7 @@ import com.pokemon.pokemon.model.consultaInformacoes.ConsultaInformacoes;
 import com.pokemon.pokemon.service.ConsultaInformacoesService;
 
 @RestController
-@RequestMapping("ConsultaInformacoesController")
+@RequestMapping("consultaInformacoes")
 public class ConsultaInformacoesController {
 	
 	@Autowired
