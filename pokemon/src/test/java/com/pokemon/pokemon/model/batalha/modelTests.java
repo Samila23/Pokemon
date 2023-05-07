@@ -7,9 +7,6 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import com.pokemon.pokemon.batalha.BatalhaRequest;
-import com.pokemon.pokemon.batalha.BatalhaResponse;
-
 @ExtendWith(SpringExtension.class)																			//Informa que é uma classe de testes 
 @AutoConfigureMockMvc																						//Sempre que usar o MockMVC
 @SpringBootTest

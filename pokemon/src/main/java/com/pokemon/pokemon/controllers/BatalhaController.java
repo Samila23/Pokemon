@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.pokemon.pokemon.batalha.BatalhaRequest;
-import com.pokemon.pokemon.batalha.BatalhaResponse;
+import com.pokemon.pokemon.model.batalha.BatalhaRequest;
+import com.pokemon.pokemon.model.batalha.BatalhaResponse;
 import com.pokemon.pokemon.service.BatalhaService;
 
 @RestController

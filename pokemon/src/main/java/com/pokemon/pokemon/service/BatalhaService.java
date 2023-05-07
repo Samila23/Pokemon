@@ -3,8 +3,8 @@ package com.pokemon.pokemon.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.pokemon.pokemon.batalha.BatalhaRequest;
-import com.pokemon.pokemon.batalha.BatalhaResponse;
+import com.pokemon.pokemon.model.batalha.BatalhaRequest;
+import com.pokemon.pokemon.model.batalha.BatalhaResponse;
 import com.pokemon.pokemon.model.consultaInformacoes.ConsultaInformacoes;
 import com.pokemon.pokemon.model.consultaInformacoes.Stats;
 
