@@ -10,7 +10,7 @@ import com.pokemon.pokemon.model.linhaEvolutiva.Forms;
 import com.pokemon.pokemon.service.LinhaEvolutivaService;
 
 @RestController
-@RequestMapping("LinhaEvolutivaController")
+@RequestMapping("linhaEvolutiva")
 public class LinhaEvolutivaController {
 	@Autowired
 	LinhaEvolutivaService linhaEvolutivaService;

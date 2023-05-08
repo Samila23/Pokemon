@@ -15,7 +15,7 @@ import org.springframework.test.web.servlet.ResultActions;
 @ExtendWith(SpringExtension.class)																			//Informa que é uma classe de testes 
 @AutoConfigureMockMvc																						//Sempre que usar o MockMVC
 @SpringBootTest
-public class consultaInformacoesTests {
+public class ConsultaInformacoesTest {
 	@Autowired
 	private MockMvc mockMvc;	
 	

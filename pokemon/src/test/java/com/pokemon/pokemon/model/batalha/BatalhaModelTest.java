@@ -10,7 +10,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 @ExtendWith(SpringExtension.class)																			//Informa que é uma classe de testes 
 @AutoConfigureMockMvc																						//Sempre que usar o MockMVC
 @SpringBootTest
-public class modelTests {
+public class BatalhaModelTest {
 	@InjectMocks
 	BatalhaRequest batalhaRequest;
 	
